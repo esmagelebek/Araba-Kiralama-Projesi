@@ -7,7 +7,7 @@ import Visitor.ArabaVisitor;
 public class SUVArabaModeli implements Model {
     @Override
     public void arabaModel(String modelAdi) {
-        System.out.println("Arabanın Modeli SUV'dur");
+        System.out.println("Arabanın Modeli "+modelAdi+" 'dır");
 
     }
     double accept (ArabaVisitor visitor, int gun){
