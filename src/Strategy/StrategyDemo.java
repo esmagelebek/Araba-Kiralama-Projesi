@@ -1,3 +1,5 @@
+package Strategy;
+
 import Strategy.OdemeTuru;
 
 public class StrategyDemo {
