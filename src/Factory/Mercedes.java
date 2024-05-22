@@ -3,8 +3,8 @@ import Bridge.Model;
 import Factory.Araba;
 
 public class Mercedes extends Araba {
-    public Mercedes(Model model) {
-        super(model.toString());
+    public Mercedes(String model) {
+        super(model);
     }
 
     @Override

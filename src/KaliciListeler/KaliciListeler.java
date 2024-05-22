@@ -1,7 +1,8 @@
+package KaliciListeler;
+
 import Factory.ArabaFactory;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class KaliciListeler {
     private static KaliciListeler instance;
