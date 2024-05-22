@@ -5,8 +5,8 @@ import Factory.Araba;
 
 public class BMW extends Araba {
 
-    public BMW(Bridge.Model model) {
-        super(model.toString());
+    public BMW(String model) {
+        super(model);
     }
 
     @Override
