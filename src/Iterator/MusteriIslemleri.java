@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MusteriIslemleri {
-    List<Musteri.MusteriBuilder> musteriList = new ArrayList<>();
+    ArrayList<Musteri.MusteriBuilder> musteriList = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
     public  void yeniKayit(){
