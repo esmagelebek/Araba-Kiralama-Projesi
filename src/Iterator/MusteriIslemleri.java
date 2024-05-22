@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MusteriIslemleri {
-    ArrayList<Musteri.MusteriBuilder> musteriList = new ArrayList<>();
+    ArrayList<String> musteriList = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
     public  void yeniKayit(){
@@ -38,7 +38,8 @@ public class MusteriIslemleri {
         if (!tcNo.isEmpty()){
             musteri.tcNo(tcNo);
         }
-        musteriList.add(musteri);
+        musteriList.add(musteri.toString());
+        System.out.println(musteriList);
     }
 
 }

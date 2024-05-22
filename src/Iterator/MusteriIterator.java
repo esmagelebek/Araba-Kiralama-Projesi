@@ -3,6 +3,7 @@ package Iterator;
 public class MusteriIterator implements Musteri{
 
     public MusteriIslemleri musteriList= new MusteriIslemleri();
+
     @Override
     public Iterator getIterator() {
         return new MusteriItarete();
