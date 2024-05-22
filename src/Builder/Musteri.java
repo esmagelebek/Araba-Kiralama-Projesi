@@ -25,44 +25,6 @@ public class Musteri {
         this.kayitliSifre=builder.kayitliSifre;
         this.kayitliKullaniciadi=builder.kayitliKullaniciadi;
     }
-
-
-
-
-    public static class MusteriBuilder{
-
-        private final String ad;
-        private final String soyad;
-        private final String telefonNumarasi;
-        private final String emailAdres;
-        private final String dogumTarihi;
-        private final String kayitliKullaniciadi;
-        private final String kayitliSifre;
-        private String adres;
-        private   String tcNo;
-
-
-        public MusteriBuilder(String ad,String soyad,String telefonNumarasi,String emailAdres,String dogumTarihi,String kayitliKullaniciadi,String kayitliSifre){
-            this.ad=ad;
-            this.soyad=soyad;
-            this.telefonNumarasi= telefonNumarasi;
-            this.emailAdres= emailAdres;
-            this.dogumTarihi=dogumTarihi;
-            this.kayitliKullaniciadi=kayitliKullaniciadi;
-            this.kayitliSifre=kayitliSifre;
-
-        }
-        public MusteriBuilder adres(String adres){
-            this.adres=adres;
-            return this;
-        }
-        public MusteriBuilder tcNo(String tcNo){
-            this.tcNo=tcNo;
-            return this;
-        }
-
-    }
-
     public String getAd() {
         return ad;
     }
@@ -106,4 +68,45 @@ public class Musteri {
     public void setKayitliSifre(String kayitliSifre) {
         this.kayitliSifre = kayitliSifre;
     }
+
+
+
+
+    public static class MusteriBuilder{
+
+        private final String ad;
+        private final String soyad;
+        private final String telefonNumarasi;
+        private final String emailAdres;
+        private final String dogumTarihi;
+        private final String kayitliKullaniciadi;
+        private final String kayitliSifre;
+        private String adres;
+        private   String tcNo;
+
+
+        public MusteriBuilder(String ad,String soyad,String telefonNumarasi,String emailAdres,String dogumTarihi,String kayitliKullaniciadi,String kayitliSifre){
+            this.ad=ad;
+            this.soyad=soyad;
+            this.telefonNumarasi= telefonNumarasi;
+            this.emailAdres= emailAdres;
+            this.dogumTarihi=dogumTarihi;
+            this.kayitliKullaniciadi=kayitliKullaniciadi;
+            this.kayitliSifre=kayitliSifre;
+
+        }
+        public MusteriBuilder adres(String adres){
+            this.adres=adres;
+            return this;
+        }
+        public MusteriBuilder tcNo(String tcNo){
+            this.tcNo=tcNo;
+            return this;
+        }
+        public Musteri build() {
+            return new Musteri(this);
+        }
+    }
+
+
 }

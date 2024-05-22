@@ -7,7 +7,6 @@ public class SedanAraba extends Araba{
     }
     @Override
     public void arabaModel(String modelAdi) {
-        System.out.println("Araba'nın modeli Sedandır");
         model.arabaModel(modelAdi);
     }
 }

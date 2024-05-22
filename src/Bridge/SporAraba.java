@@ -7,7 +7,6 @@ public class SporAraba extends Araba{
     }
     @Override
     public void arabaModel(String modelAdi) {
-        System.out.println("Araba'nın modeli Spordur");
         model.arabaModel(modelAdi);
     }
 }
