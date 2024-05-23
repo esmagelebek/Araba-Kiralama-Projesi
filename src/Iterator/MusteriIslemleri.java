@@ -3,12 +3,12 @@ package Iterator;
 import Builder.Musteri;
 
 import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Scanner;
 
 public class MusteriIslemleri {
     ArrayList<String> musteriList = new ArrayList<>();
-    Scanner scanner = new Scanner(System.in);
+
 
     public  void yeniKayit(){
         Scanner scanner1 = new Scanner(System.in);
@@ -38,8 +38,8 @@ public class MusteriIslemleri {
         if (!tcNo.isEmpty()){
             musteri.tcNo(tcNo);
         }
-        musteriList.add(musteri.toString());
-        System.out.println(musteriList);
+        musteriList.add(ad);
+
     }
 
 }
